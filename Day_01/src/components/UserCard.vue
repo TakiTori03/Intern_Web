@@ -7,6 +7,9 @@ export default {
   <div class="user-card">
     <tr>
       <td>
+        <slot></slot>
+      </td>
+      <td>
         <img :src="avatar" alt="User Avatar" class="avatar" />
       </td>
       <td>
@@ -14,7 +17,7 @@ export default {
         <p>Age: {{ age }}</p>
       </td>
       <td>
-        <button @click="$emit('delete')">Delete</button>
+        <button @click="$emit('delete', name)">Delete</button>
       </td>
     </tr>
   </div>
@@ -28,6 +31,7 @@ export default {
   border: 1px solid #ccc;
   margin-bottom: 10px;
 }
+
 .avatar {
   width: 50px;
   height: 50px;

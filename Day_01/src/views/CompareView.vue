@@ -72,12 +72,12 @@ export default {
       const startMethod = performance.now()
       this.filterByMethod()
       const endMethod = performance.now()
-      this.methodTime = Math.round((endMethod - startMethod) * 100) / 100
+      this.methodTime = endMethod - startMethod
 
       const startComputed = performance.now()
       this.filterByComputed // access it to trigger computation
       const endComputed = performance.now()
-      this.computedTime = Math.round((endComputed - startComputed) * 100) / 100
+      this.computedTime = endComputed - startComputed
     },
   },
 }

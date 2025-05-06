@@ -19,6 +19,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/search">Search Box</RouterLink>
         <RouterLink to="/compare">Compare</RouterLink>
         <RouterLink to="/tab-navigation">Navigation</RouterLink>
+        <RouterLink to="/user-cards">User Cards</RouterLink>
       </nav>
     </div>
   </header>

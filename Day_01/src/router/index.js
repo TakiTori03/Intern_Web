@@ -59,6 +59,11 @@ const router = createRouter({
       name: 'tab-navigation',
       component: () => import('../views/TabNavigationView.vue'),
     },
+    {
+      path: '/user-cards',
+      name: 'user-cards',
+      component: () => import('../views/UserCardsView.vue'),
+    },
   ],
 })
 
