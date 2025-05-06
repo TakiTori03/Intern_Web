@@ -1,13 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
+      <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/reverse">Reverse String</RouterLink>
@@ -16,6 +15,10 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/login">Login</RouterLink>
         <RouterLink to="/count">Count</RouterLink>
         <RouterLink to="/to-do">To-do List</RouterLink>
+        <RouterLink to="/shopping-cart">Shopping cart</RouterLink>
+        <RouterLink to="/search">Search Box</RouterLink>
+        <RouterLink to="/compare">Compare</RouterLink>
+        <RouterLink to="/tab-navigation">Navigation</RouterLink>
       </nav>
     </div>
   </header>
@@ -36,6 +39,7 @@ header {
 
 nav {
   width: 100%;
+
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;

@@ -39,6 +39,26 @@ const router = createRouter({
       name: 'todo_list',
       component: () => import('../views/TodoListView.vue'),
     },
+    {
+      path: '/shopping-cart',
+      name: 'shopping_cart',
+      component: () => import('../views/ShoppingCartView.vue'),
+    },
+    {
+      path: '/search',
+      name: 'search-box',
+      component: () => import('../views/SearchBoxView.vue'),
+    },
+    {
+      path: '/compare',
+      name: 'compare_performance',
+      component: () => import('../views/CompareView.vue'),
+    },
+    {
+      path: '/tab-navigation',
+      name: 'tab-navigation',
+      component: () => import('../views/TabNavigationView.vue'),
+    },
   ],
 })
 

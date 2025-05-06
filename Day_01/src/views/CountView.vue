@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="count">
     <h1>Count Button</h1>
     <p v-bind:class="{ negative: !isPositive }">{{ count }}</p>
     <button @click="hit" :disabled="isDisable">

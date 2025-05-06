@@ -1,6 +1,4 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+<script setup></script>
 
 <template>
   <main><h1>Hello World</h1></main>
