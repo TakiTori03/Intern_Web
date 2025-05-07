@@ -20,6 +20,10 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/compare">Compare</RouterLink>
         <RouterLink to="/tab-navigation">Navigation</RouterLink>
         <RouterLink to="/user-cards">User Cards</RouterLink>
+        <RouterLink to="/timer">Timer</RouterLink>
+        <RouterLink to="/dom-access">Dom-Access</RouterLink>
+        <RouterLink to="/users">User List</RouterLink>
+        <RouterLink to="/blogs">Blog List</RouterLink>
       </nav>
     </div>
   </header>

@@ -27,7 +27,7 @@ const router = createRouter({
     {
       path: '/products',
       name: 'products',
-      component: () => import('../views/ProductsView.vue'),
+      component: () => import('../views/ProductListView.vue'),
     },
     {
       path: '/count',
@@ -62,7 +62,57 @@ const router = createRouter({
     {
       path: '/user-cards',
       name: 'user-cards',
-      component: () => import('../views/UserCardsView.vue'),
+      component: () => import('../views/UserCardView.vue'),
+    },
+    {
+      path: '/timer',
+      name: 'timer',
+      component: () => import('../views/TimerView.vue'),
+    },
+
+    {
+      path: '/users',
+      name: 'userList',
+      component: () => import('../views/UserListView.vue'),
+      children: [
+        {
+          path: ':id',
+          name: 'user',
+          component: () => import('../components/UserFetch.vue'),
+        },
+      ],
+    },
+    {
+      path: '/users/:id',
+      name: 'user',
+      component: () => import('../components/UserFetch.vue'),
+    },
+    {
+      path: '/blogs',
+      name: 'blogList',
+      component: () => import('../views/BlogListView.vue'),
+      children: [
+        {
+          path: ':id',
+          name: 'blog',
+          component: () => import('../components/BlogFetch.vue'),
+        },
+      ],
+    },
+    {
+      path: '/blogs/:id',
+      name: 'blog',
+      component: () => import('../components/BlogFetch.vue'),
+    },
+    {
+      path: '/dom-access',
+      name: 'domAccess',
+      component: () => import('../views/DomView.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('../components/NotFound.vue'),
     },
   ],
 })

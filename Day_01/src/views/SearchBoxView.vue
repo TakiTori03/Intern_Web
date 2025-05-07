@@ -89,10 +89,6 @@ export default {
     },
   },
   methods: {
-    wrapFilterList() {
-      this.loading = true
-      this.filterList
-    },
     filterList: _.debounce(function () {
       this.filterData = this.mockData.filter((data) => {
         const result = data.toLowerCase().includes(this.input.toLowerCase()) && this.input !== ''
@@ -100,9 +96,6 @@ export default {
         return result
       })
     }, 500),
-    created() {
-      this.filterData = this.mockData
-    },
   },
 }
 </script>

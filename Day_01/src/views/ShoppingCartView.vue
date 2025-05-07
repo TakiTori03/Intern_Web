@@ -3,19 +3,23 @@
     <h1>Shopping Cart</h1>
 
     <table>
-      <tr>
-        <th>id</th>
-        <th>name</th>
-        <th>price</th>
-        <th>quantity</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>price</th>
+          <th>quantity</th>
+        </tr>
+      </thead>
 
-      <tr v-for="item in cartItems" :key="item.id">
-        <td>{{ item.id }}</td>
-        <td>{{ item.name }}</td>
-        <td>{{ item.price }}</td>
-        <td>{{ item.quantity }}</td>
-      </tr>
+      <tbody>
+        <tr v-for="item in cartItems" :key="item.id">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.quantity }}</td>
+        </tr>
+      </tbody>
     </table>
     <p>Total price: {{ totalPrice }}</p>
     <p v-if="hasDiscount">You have a discount!</p>

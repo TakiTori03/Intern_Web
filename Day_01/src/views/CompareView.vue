@@ -13,11 +13,6 @@
     <hr />
     <h2>Method Filter Time: {{ methodTime }} ms</h2>
     <h2>Computed Filter Time: {{ computedTime }} ms</h2>
-    <!-- <ul>
-      <li v-for="item in filterByComputed" :key="item.id">
-        {{ item.name }} - {{ item.price }} - {{ item.category }}
-      </li>
-    </ul> -->
   </div>
 </template>
 <script>
